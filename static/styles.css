@@ -6,6 +6,7 @@
 .site-header a {
   color: #999;
   transition: ease-in-out color 0.15s;
+  margin-left: 1.5rem;
 }
 .site-header a:hover {
   color: rgb(70, 65, 65);
@@ -31,10 +32,6 @@
   background-color: #e5e5e5;
 }
 
-/*
-   * Extra utilities
-   */
-
 .flex-equal > * {
   -ms-flex: 1;
   flex: 1;
@@ -48,8 +45,4 @@
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.py-2 {
-    margin: auto;
 }
