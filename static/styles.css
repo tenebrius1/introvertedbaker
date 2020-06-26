@@ -58,11 +58,16 @@
   color: aliceblue;
 }
 
-.container {
-  flex-direction: column;
-}
+@media (max-width: 480px) {
+  #logo {
+    width: 100px !important;
+    height: 50px !important;
+  }
+  #navbarSupportedContent {
+    justify-content: flex-end !important;
+  }
+  #navbar_container {
+    flex-direction: row !important;
+  }
 
-#logo {
-  width: 200px; 
-  height: 100px;
 }
