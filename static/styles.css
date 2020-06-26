@@ -57,3 +57,12 @@
 #header_wording {
   color: aliceblue;
 }
+
+.container {
+  flex-direction: column;
+}
+
+#logo {
+  width: 200px; 
+  height: 100px;
+}

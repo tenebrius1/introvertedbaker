@@ -19,21 +19,23 @@
 
     <link href="/static/logo.png" rel="icon" />
 
+    <script src="../static/script.js"></script>
+
     <title>theintrovertedbaker: {% block title %}{% endblock %}</title>
 </head>
 
 <body>
     <nav class="site-header sticky-top navbar-expand-lg navbar navbar-light">
-        <div class="container d-flex">
+        <div class="container d-flex justify-content-center" id="navbar_container">
             <a class="navbar-brand" href="/" aria-label="Home">
-                <img src="/static/logo.png" loading="lazy" width="100" height="50">
+                <img src="/static/logo.png" loading="lazy" id="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">ABOUT</a>
