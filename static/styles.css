@@ -69,5 +69,12 @@
   #navbar_container {
     flex-direction: row !important;
   }
+}
 
+#hummingbird {
+  object-fit: cover;
+}
+
+.h4 {
+  padding: 1.5rem;
 }

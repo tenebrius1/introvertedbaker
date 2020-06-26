@@ -7,9 +7,9 @@ window.onscroll = function () {
 
 function minimizeNavBar() {
   if (
-    document.body.scrollTop >= 70 ||
-    document.documentElement.scrollTop >= 70 &&
-    window.matchMedia("(min-width: 480px)").matches
+    document.body.scrollTop >= 40 ||
+    (document.documentElement.scrollTop >= 40 &&
+      window.matchMedia("(min-width: 480px)").matches)
   ) {
     document
       .getElementById("navbarSupportedContent")
