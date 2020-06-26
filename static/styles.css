@@ -46,3 +46,14 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
+#head {
+  background-image: url("./Hummingbird_cake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+}
+
+#header_wording {
+  color: aliceblue;
+}
