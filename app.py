@@ -13,3 +13,7 @@ def index():
 @app.route("/products")
 def products():
     return render_template("products.html")
+
+@app.route("/ccc")
+def ccc():
+    return render_template("ccc.html")
