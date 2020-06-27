@@ -3,9 +3,16 @@
 {% block title %}Chocolate Chunk Cookies{% endblock %}
 
 {% block main %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/products">Products</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Chocolate Chunk Cookies</li>
+    </ol>
+</nav>
 <div class="container" id="ccc_container">
-    <div class="row justify-content-center">
-        <div class="col-12">
+    <div class="row justify-content-start">
+        <div class="col-sm-5 col-12">
             <div id="ccc" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#ccc" data-slide-to="0" class="active"></li>
@@ -53,6 +60,12 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+        </div>
+        <div class="col">
+            <h3>Chocolate Chunk Cookies</h3>
+            <h4>A cake with fresh banana, walnuts and pinapple</h2>
+            <h3>$16/13</h3>
+            <h4>(200g,100g)</h4>
         </div>
     </div>
 </div>
