@@ -38,13 +38,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link {{ "active" if request.path == '/#' }}" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link {{ "active" if request.path == '/products' }}" href="/products">PRODUCTS</a
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/products">PRODUCTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ORDER NOW</a>
+                        <a class="nav-link {{ "active" if request.path == '/#' }}" href="#">ORDER NOW</a>
                     </li>
                 </ul>
             </div>
