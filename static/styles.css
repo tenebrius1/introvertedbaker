@@ -82,6 +82,10 @@
   border-bottom: 3px solid #304543;
 }
 
+#instagram_feed {
+  display: flex;
+}
+
 @media (max-width: 480px) {
   #logo {
     width: 100px !important;
