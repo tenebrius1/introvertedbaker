@@ -17,3 +17,7 @@ def products():
 @app.route("/ccc")
 def ccc():
     return render_template("ccc.html")
+
+""" @app.route("/faq")
+def faq():
+    return render_template("faq.html") """

@@ -77,9 +77,81 @@
         <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
 </div>
+<div class="container pt-5 text-center" id="email_form">
+    <div class="row justify-content-center">
+        <h4>Let's keep in touch!</h4>
+    </div>
+    <div class="row justify-content-center px-3">
+        <p>Be updated with the newest products, updates and promotions!</p>
+    </div>
+    <div class="row justify-content-center">
+        <form name="email_input" class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="form-group col-10">
+                    <input class="form-control text-center" placeholder="enter your email" name="emails" id="emails"
+                        style="background-color: whitesmoke;" autocomplete="off" type="email" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address!
+                    </div>
+                </div>
+                <div class="form-group col-2">
+                    <button class="btn btn-success" type="submit" id="submit_email">enter</button>
+                </div>
+            </div>
+        </form>
+        <div class="modal fade" id="thanks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">You're awesome!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Can't wait to share some sweet deals with you!
+                        <br>xoxo, theintrovertedbaker</br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container justify-content-center" id="instagram_feed">
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-13750575-db4f-487f-a80e-78cffab87119"></div>  
+    <script src="https://apps.elfsight.com/p/platform.js"></script>
+    <div class="elfsight-app-13750575-db4f-487f-a80e-78cffab87119"></div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbzzZgvgNXS7se-RArNCK1xJBRGUONFZZT74dW34Z-kPqRxWqmUy/exec'
+                        const form = document.forms['email_input']
+
+                        event.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        document.getElementById('emails').value = '';
+                        $('#thanks').modal('show');
+                        form.classList.remove('was-validated');
+                        return false;
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
 </div>
 
 {% endblock %}

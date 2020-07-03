@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .site-header {
   background-color: rgba(248, 248, 248, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
