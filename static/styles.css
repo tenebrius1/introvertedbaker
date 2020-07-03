@@ -90,6 +90,19 @@ html {
   display: flex;
 }
 
+#submit_email {
+  background-color: #304543;
+  color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.no-underline {
+  text-decoration: none !important; 
+}
+
 @media (max-width: 480px) {
   #logo {
     width: 100px !important;
