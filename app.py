@@ -25,7 +25,11 @@ def biscotti():
 @app.route("/hummingbird")
 def hummingbird():
     return render_template("hummingbird.html")
-    
+
+@app.route("/lemon_cake")
+def lemon_cake():
+    return render_template("lemon_cake.html")
+
 """ @app.route("/faq")
 def faq():
     return render_template("faq.html") """

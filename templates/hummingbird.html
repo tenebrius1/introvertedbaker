@@ -5,19 +5,23 @@
 {% block main %}
 <div class="container">
     <a href="/products" style="color: black;" class="mx-3 my-3 no-underline">
-        <h5>❮ back to products</h5>
+        <h6>❮ back to products</h6>
     </a>
 </div>
 <div class="container" id="hummingbird_container">
     <div class="row justify-content-start">
-        <div class="col-sm-5 col-12">
+        <div class="col-sm-4 col-12">
             <div id="hummingbird" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#hummingbird" data-slide-to="0" class="active"></li>
+                    <li data-target="#hummingbird" data-slide-to="1"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../static/hummingbird/hummingbird_0.jpg" class="d-block w-100" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/hummingbird/hummingbird_1.jpg" class="d-block w-100" alt="Second slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#hummingbird" role="button" data-slide="prev">
