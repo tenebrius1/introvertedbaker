@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}Hummingbird Cake{% endblock %}
+
+{% block main %}
+<div class="container">
+    <a href="/products" style="color: black;" class="mx-3 my-3 no-underline">
+        <h5>❮ back to products</h5>
+    </a>
+</div>
+<div class="container" id="hummingbird_container">
+    <div class="row justify-content-start">
+        <div class="col-sm-5 col-12">
+            <div id="hummingbird" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#hummingbird" data-slide-to="0" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/hummingbird/hummingbird_0.jpg" class="d-block w-100" alt="First slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#hummingbird" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#hummingbird" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <h1>Hummingbird Cake</h1>
+            <h3 class="mt-sm-5">
+                A light and healthy cake, obtaining natural
+                sweetness from bananas and fruits.<br>
+                It is sudded with walnuts and finished with
+                a thin layer of tangy cream cheese frosting.
+            </h3>
+            <h4 class="mt-sm-5">
+                <small class="text-muted">whole wheat flour, white flour, eggs, butter, oil,</small>
+                <small class="text-muted">brown sugar, banana, pineapple, walnuts, cream cheese</small>
+            </h4>
+            <h2 class="mt-sm-5">$16</h2>
+            <h4>(580g)</h4>
+        </div>
+    </div>
+</div>
+{% endblock %}

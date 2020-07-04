@@ -18,6 +18,14 @@ def products():
 def ccc():
     return render_template("ccc.html")
 
+@app.route("/biscotti")
+def biscotti():
+    return render_template("biscotti.html")
+
+@app.route("/hummingbird")
+def hummingbird():
+    return render_template("hummingbird.html")
+    
 """ @app.route("/faq")
 def faq():
     return render_template("faq.html") """
