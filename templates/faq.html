@@ -1,9 +1,274 @@
-{% extends layout.html %}
+{% extends "layout.html" %} {% block title %}FAQ{% endblock %} {% block main %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 col">
+            <div class="accordion" id="accordion">
+                <h3 class="my-4 d-flex justify-content-center">ORDERING</h3>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseOne">
+                                How do I order?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Order through
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdW8o9rDN4v8KzvaZ3aBJ3TVjqR1MIQhxlMYloJ7j_tRJpNcQ/viewform">this</a>
+                            link or DM us on instagram! <br />
+                            We will contact you regarding payment and collection details once
+                            you have placed your order.
+                            <br /><br />
+                            Email us for larger coperate/event orders.
+                        </div>
+                    </div>
+                </div>
 
-{% block title %}FAQ{% endblock %}
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseTwo">
+                                How long in advance do I need to place my order?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            At least 2 days in advance. <br />
+                            If you need an order urgently, do reach out and we will try our
+                            best to accomodate! :)
+                        </div>
+                    </div>
+                </div>
 
-{% block main %}
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseThree">
+                                Do you have cakes/cookies in other sizes or quantities?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            The size of our standard bakes are as reflected on our
+                            <a href="/products">products page</a> and our
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdW8o9rDN4v8KzvaZ3aBJ3TVjqR1MIQhxlMYloJ7j_tRJpNcQ/viewform">
+                                order form.</a><br /><br />
+                            For alternative sizes, please email us to check on the
+                            availability. <br />
+                            Cooperate orders are welcomed!
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseFour">
+                                Can I order it as a gift/suprise for someone else?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            Definately, we provide a hand written note for the receiver
+                            too!<br />
+                            However, please ensure that the receiver is at the location to
+                            receive the bakes.<br />
+                            In the event nobody is present to receive the bakes, a re-delivery
+                            fee of $10 applies.
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseFive">
+                                What if I need to cancel my order?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            Cancel <strong>more than a week</strong> before the delivery date: 100% refund
+                            <br />
+                            Cancel <strong>4 days to a week</strong> before the delivery date: 50% refund <br />
+                            Cancel <strong>less than 4 days</strong> before the delivery date: no refund
+                        </div>
+                    </div>
+                </div>
 
+                <br />
+
+                <h3 class="my-4 d-flex justify-content-center">
+                    DELIVERY AND SELF COLLECTION
+                </h3>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseSix">
+                                Where do you deliver to?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                            We deliver to all parts of mainland Singapore, including Sentosa.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseSeven">
+                                What are your delivery times and charges?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body">
+                            We deliver within a 5 hour time frame, which will be confirmed
+                            after you submit the order form. <br /><br />
+                            Delivery charges are as stated in this <a href="#charges" data-toggle="modal"
+                                class="no-underline">list</a>. <br />
+                            If you require delivery at a specific timing, we will arrange a
+                            seperate vehicle to your location at an additional $10. <br />
+                            Do note that there will be a surcharge for deliveries to
+                            restricted zones and Sentosa.
+                        </div>
+                        <div class="modal fade" id="charges" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close pb-2" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <img src="../static/misc/charges.jpeg" alt="Charges Table" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseEight">
+                                Where is the self-collection location and timeslots?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                        <div class="card-body">
+                            Self collection will be at Tiong Bahru MRT station. <br />
+                            The time of collection will be arranged and confirmed after you
+                            have submitted the order form.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingNine">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseNine">
+                                I can’t make it on time for my delivery. What can I do?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                        <div class="card-body">
+                            A strict 10min waiting time applies for all deliveries. <br />
+                            If the bakes are not collected within this time, they will be
+                            brought back which will incur a re&#8209delivery fee of $10.
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <h3 class="my-4 d-flex justify-content-center">
+                    DIETRY REQUIREMENTS
+                </h3>
+                <div class="card">
+                    <div class="card-header" id="headingTen">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseTen">
+                                Are your bakes halal?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                        <div class="card-body">
+                            None of our bakes contain pork, lard or their derivaties. <br />
+                            However, we are not Halal certified and our kitchen has been used
+                            to handle alcohol.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingEleven">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseEleven">
+                                What if I have a nut/dairy allergy?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                        <div class="card-body">
+                            Head over to our <a href="/products">products</a> page and click
+                            on the product you are interested to order. <br>
+                            The ingredients used for each product are listed there! <br />
+                            Do note that our kitchen handles nuts and dairy.
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <h3 class="my-4 d-flex justify-content-center">CAKE AND COOKIE CARE</h3>
+                <div class="card">
+                    <div class="card-header" id="headingTwelve">
+                        <h5 class="mb-0">
+                            <a class="accordion-toggle no-underline" type="button" data-toggle="collapse"
+                                data-parent="#accordion" href="#collapseTwelve">
+                                How should I store the bakes?
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                        <div class="card-body">
+                            All our bakes are best eaten on the day of delivery for the best
+                            taste and texture.
+                            <br /><br />
+                            <strong>Cookies:</strong> store in an air tight container, at room temperature,
+                            away from sunlight, for up to 10 days.
+                            <br /><br />
+                            <strong>Cakes:</strong> store in the refrigerator for up to 5 days. Thaw 15-20mins
+                            before consumption.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

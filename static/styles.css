@@ -17,23 +17,12 @@ html {
   text-decoration: none;
 }
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+a:hover {
+  color: #304543;
 }
 
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
+.btn-outline-secondary:hover {
+  background-color: #f9f9f9;
 }
 
 .flex-equal > * {
@@ -62,10 +51,6 @@ html {
 
 .h4 {
   padding: 1.5rem;
-}
-
-#ccc_container {
-  margin-top: 2.5rem;
 }
 
 #footer {
@@ -103,9 +88,12 @@ html {
   text-decoration: none !important; 
 }
 
-.carousel-pic {
-  width: 91px !important;
-  height: 21px !important;
+.accordion-toggle {
+  color: black;
+}
+
+.card-title {
+  color: #304543;
 }
 
 @media (max-width: 480px) {
@@ -122,11 +110,27 @@ html {
   .nav-item {
     width: max-content !important;
   }
+  #order {
+    border: none;
+  }
 }
 
 @media (min-width: 768px) {
   .flex-md-equal > * {
     -ms-flex: 1;
     flex: 1;
+  }
+  .pad-left {
+    margin-left: 8rem;
+    transform: translateX(4rem);
+  }
+  .translate-x {
+    transform: translateX(4rem);
+  }
+  .nav-link {
+    padding: .2rem 1rem !important;
+  }
+  #order_phone {
+    visibility: hidden;
   }
 }

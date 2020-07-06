@@ -27,23 +27,28 @@
     <nav class="site-header sticky-top navbar-expand-lg navbar navbar-light">
         <div class="container d-flex" id="navbar_container">
             <a class="navbar-brand" href="/" aria-label="Home">
-                <img src="/static/misc/logo.png" loading="lazy" id="logo">
+                <img src="/static/misc/logo.png" loading="lazy" id="logo" height="50px" width="100px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link {{ "active" if request.path == '/#' }}" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link {{ "active" if request.path == '/products' }}" href="/products">PRODUCTS</a
+                        <a class="nav-link {{ "active" if request.path == '/about' }}" href="about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ "active" if request.path == '/#' }}" href="#">ORDER NOW</a>
+                        <a class="nav-link {{ "active" if request.path == '/products' }}" href="/products">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ "active" if request.path == '/faq' }}" href="/faq">FAQ</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-sm-0">
+                        <a class="nav-link btn btn-outline-secondary" role="button" id="order"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdW8o9rDN4v8KzvaZ3aBJ3TVjqR1MIQhxlMYloJ7j_tRJpNcQ/viewform">ORDER
+                            NOW</a>
                     </li>
                 </ul>
             </div>
@@ -53,25 +58,22 @@
 </body>
 
 <footer class="container-fluid pt-5 px-3 pb-1" id="footer">
-    <div class="row">
-        <div class="col-12 col-md">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-3">
             <p class="footer_words"><strong>Follow us</strong></p>
-            <p class="footer_words"><img src="../static/misc/instagram.png" width="20px" height="20px" style="margin: 0.5rem;">@theintrovertedbakersg</p>
+            <p class="footer_words"><img src="../static/misc/instagram.png" width="20px" height="20px"
+                    style="margin: 0.5rem;">@theintrovertedbaker.sg</p>
         </div>
-        <div class="col-12 col-md">
+        <div class="col-12 col-md-3">
             <p class="footer_words"><strong>Contact us</strong></p>
-            <p class="footer_words"><img src="../static/misc/phone.png" style="margin: 0.5rem;">+6598235956</p>
-            <p class="footer_words"><img src="../static/misc/mail.png" style="margin: 0.5rem;">irockisawesome@gmail.com</p>
-        </div>
-        <div class="col-12 col-md">
-            <p class="footer_words"><strong>FAQ</strong></p>
+            <p class="footer_words"><img src="../static/misc/phone.png" style="margin: 0.5rem;">+65 98235956</p>
+            <p class="footer_words"><img src="../static/misc/mail.png"
+                    style="margin: 0.5rem;">theintrovertedbaker.sg@gmail.com
+            </p>
         </div>
     </div>
-    <div class="row justify-content-center align-items-end" id="scroll_to_top">
-        <a href="#" onclick=scrollToTop() style="color: black;"><small>back to top</small></a>
+    <div class="row justify-content-center align-items-end mt-3 mb-5" id="scroll_to_top">
+        <a href="#" onclick=scrollToTop() style="color: rgba(0,0,0,.5);"><small>back to top</small></a>
     </div>
 </footer>
-
 </html>
-
-
