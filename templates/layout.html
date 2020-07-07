@@ -36,14 +36,16 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
+                    {% if request.path != '/'%}
                     <li class="nav-item">
-                        <a class="nav-link {{ "active" if request.path == '/about' }}" href="about">ABOUT</a>
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item">
+                        <a class="nav-link {{ "active" if request.path == '/about' }}" href="/about">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ "active" if request.path == '/products' }}" href="/products">PRODUCTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ "active" if request.path == '/faq' }}" href="/faq">FAQ</a>
                     </li>
                     <li class="nav-item mt-2 mt-sm-0">
                         <a class="nav-link btn btn-outline-secondary" role="button" id="order"
@@ -59,17 +61,20 @@
 
 <footer class="container-fluid pt-5 px-3 pb-1" id="footer">
     <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-3 px-0">
+        <div class="col-12 col-lg-3 col-md-4 px-lg-0">
             <p class="footer_words"><strong>Follow us</strong></p>
             <p class="footer_words"><img src="../static/misc/instagram.png" width="20px" height="20px"
                     style="margin: 0.5rem;">@theintrovertedbaker.sg</p>
         </div>
-        <div class="col-12 col-md-3 px-0">
+        <div class="col-12 col-lg-3 col-md-4 px-lg-0">
             <p class="footer_words"><strong>Contact us</strong></p>
             <p class="footer_words"><img src="../static/misc/phone.png" style="margin: 0.5rem;">+65 98235956</p>
             <p class="footer_words"><img src="../static/misc/mail.png"
                     style="margin: 0.5rem;">theintrovertedbaker.sg@gmail.com
             </p>
+        </div>
+        <div class="col-12 col-lg-3 col-md-4 px-lg-0">
+            <a class="footer_words no-underline" href="/faq" style="color: black;"><strong>FAQ</strong></a>
         </div>
     </div>
     <div class="row justify-content-center align-items-end mt-3 mb-2" id="scroll_to_top">
