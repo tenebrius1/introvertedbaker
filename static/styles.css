@@ -55,8 +55,6 @@ a:hover {
 
 #footer {
   background-color: #f5f5f5;
-  margin-top: 3rem;
-  width: 100%;
 }
 
 .breadcrumb {
@@ -78,10 +76,6 @@ a:hover {
 #submit_email {
   background-color: #304543;
   color: white;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  content: ">";
 }
 
 .no-underline {
